@@ -1,0 +1,12 @@
+# Eclipse metadata and cache
+.metadata/
+*.log
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Java build folders
+bin/
+target/
