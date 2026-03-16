@@ -1,10 +1,10 @@
 package main;
 
 public class Record {
-    public String name;
-    public String gender;
-    public String age;
-    public String address;
+    private String name;
+    private String gender;
+    private String age;
+    private String address;
 
     public Record(String name, String gender, String age, String address) {
         this.name = name;
