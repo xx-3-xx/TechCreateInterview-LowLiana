@@ -1,6 +1,0 @@
-John Doe           M 25  1234
-Jane Smith         F 30  1234
-Low Liana          F 40  4567
-Wee Zi En          M 40  6789 
-Liana              F 35  80980          
-Liana              F 45  Jalan Lembing 2
