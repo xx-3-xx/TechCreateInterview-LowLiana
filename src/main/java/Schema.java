@@ -13,11 +13,15 @@ public class Schema {
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split("\\s+");
                 if (parts.length == 3) {
-                    fields.add(new FieldDefinition(
-                            parts[0],
-                            Integer.parseInt(parts[1]),
-                            Integer.parseInt(parts[2])
-                    ));
+                    try {
+                        fields.add(new FieldDefinition(
+                                parts[0],
+                                Integer.parseInt(parts[1]),
+                                Integer.parseInt(parts[2])
+                        ));
+                    } catch (NumberFormatException e) {
+                        // Skip invalid lines
+                    }
                 }
             }
         }

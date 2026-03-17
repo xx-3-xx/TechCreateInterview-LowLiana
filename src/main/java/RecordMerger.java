@@ -25,6 +25,8 @@ public class RecordMerger {
 				
 				// Parse the line to create a Record object
 				Record current = parseLine(line);
+				
+				if (current == null) continue; // Skip invalid lines
 												
 				// use merge method to merge records with the same name
 				mergeMap.merge(current.name().toLowerCase(), current, (existing, replacement) -> {
